@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', serif , inherit;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.pcontainer {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #199233, #232b97);
+    padding: 10px;
+}
+
+.todo {
+    width: 100%;
+    max-width: 540px;
+    background: #e8f9ff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    /* display: flex; */
+}
+
+.todo h2 {
+    color: #4e5358;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(196, 205, 209);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: larger;
+
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+button {
+    color: rgb(19, 17, 17);
+    font-family: impact, sans-serif;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(95, 121, 131);
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+button:hover {
+    background: rgb(124, 152, 165);
+    color: rgb(0, 0, 0);
+}
+
+button:active {
+    background: rgb(143, 173, 187);
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: #555;
+} 
+
+.checked::before{
+    background-image: url(images/checked.png);
+} 
+/* cross/X ka option ...... or isko span ma naam bhi dia hai */
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;    
+}
+ul li span:hover{
+    background: #d7eef7;
+}
+ul li span:active{
+    background: #dcf3fc;
+
+}
+
+
+
+
